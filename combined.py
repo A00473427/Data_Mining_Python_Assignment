@@ -64,7 +64,7 @@ if app_mode == "question3":
 
         image = image.convert('L')
         image = ImageOps.invert(image)
-        img_inv = image.resize((28, 28), Image.ANTIALIAS)
+        img_inv = image.resize((28, 28))
         image_array = np.array(img_inv) / 255.0
         image_array = image_array.reshape((1, 28, 28, 1))
 
